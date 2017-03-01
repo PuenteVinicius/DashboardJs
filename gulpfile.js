@@ -5,7 +5,7 @@ browserSync = require('browser-sync').create();
 
 
 var config = {
-  srcPath: = 'src/',
+  srcPath: 'src/',
   distPath:'styles/'
 };
 
@@ -26,8 +26,11 @@ gulp.task('sass', function(){
       outputStyle: 'compressed'
     }).on('error', sass.logError)) // Using gulp-sass
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(config.distPath+'css'))
+    .pipe(gulp.dest(config.distPath))
     .pipe(browserSync.reload({
       stream: true
     }));
+});
+gulp.task('watch', ['browserSync'], function() {
+    gulp.watch(config.srcPath+'sass/**/*.+(scss|sass)', ['sass']);
 });
