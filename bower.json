@@ -1,0 +1,17 @@
+{
+  "name": "dashboardjs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PuenteVinicius/DashboardJs",
+  "description": "A repository designated to learn how to create a dashboard with JS.",
+  "authors": [
+    "ViniciusPuente"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
