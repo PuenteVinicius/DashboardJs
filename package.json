@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^2.4.1"
   },
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "materialize-css": "^0.98.0"
   }
 }
