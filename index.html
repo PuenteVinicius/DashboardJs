@@ -6,36 +6,62 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="/styles/main.css "rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="/bower_components/materialize/bin/materialize.css"  media="screen,projection"/>
+  <link href="/bower_components/c3/c3.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-      <h1 class = "col s6 m6 l12">DashboardJS</h1>
+  <header class = "row">
+      <p class = "col l2">DashboardJS</p>
   </header>
-  <section class="graphs row">
-    <div class="revenue col s12 m12 l6" >
-      
+  <section class=" row graphs">
+
+  <!---  <div class = "revenue col l3">
+      <div class="card grey lighten-5  ">
+        <div class="card-content black-text">
+          <span class="card-title">Revenue</span>
+              <div id="revenue"></div>
+          </div>
+        </div>
+    </div> !-->
+    <div class = "maintained col l3">
+      <div class="card grey lighten-5  ">
+        <div class="card-content black-text">
+          <span class="card-title">Maintained</span>
+              <div id="maintained"></div>
+          </div>
+        </div>
     </div>
 
-    <div class="maintained col s12 m6 l3">
-        <p>Eu sou outro texto!</p>
+    <div class = "maintained-graph col l9">
+      <div class="card grey lighten-5  ">
+        <div class="card-content black-text">
+          <span class="card-title">Maintained Graph</span>
+              <div id="maintained-graph"></div>
+          </div>
+        </div>
     </div>
 
-    <div class="maintained-graph s12 m6 col l3">
-      <p>Mais um outro texto!</p>
-
+    <div class = "new col l3">
+      <div class="card grey lighten-5">
+        <div class="card-content black-text">
+          <span class="card-title">New</span>
+              <div id="new"></div>
+          </div>
+        </div>
     </div>
-
-    <div class="new col s12 m6 l3" >
-      <p>Estou cansado de textos!</p>
-    </div>
-
-    <div class="new-graph s12 m6 col l3" >
-      <p>Esse é o último eu juro!</p>
-
+    <div class = "new-graph col l9">
+      <div class="card grey lighten-5  ">
+        <div class="card-content black-text">
+          <span class="card-title">New</span>
+              <div id="new-graph"></div>
+          </div>
+        </div>
     </div>
   </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/d3/d3.min.js" charset="utf-8"></script>
+    <script src="/bower_components/c3/c3.js"></script>
+    <script src="/scripts/main.js"></script>
 </body>
 <footer class="col s12 m12 l12">
     <p>code by: ViniciusPuente</p>

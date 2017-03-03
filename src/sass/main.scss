@@ -1,20 +1,30 @@
+$dark-bg: #212121;
+$white: #ffffff;
+header{
+  background: black;
+}
+p{
+  color: $white;
+  font-size: 20px;
+}
 .revenue{
-
-  height: 100vh;
 }
 .maintained{
-  height: 50vh;
 
 }
 .maintained-graph{
-  height: 50vh;
 
 }
 .new{
-  height: 50vh;
-
+  margin-top: -135px;
 }
 .new-graph{
-  height: 50vh;
 
+
+}
+.line{
+  height: 4vh;
+}
+.espaco{
+  background: red;
 }
